@@ -1,0 +1,50 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/*background-color: orange;*/
+	background-image: url("halftone-yellow.png");
+}
+
+.password-box {
+	display: block;	
+	width: 99%;
+	height: 100px;
+	margin: 200px auto;
+	/*background-color: red;*/
+	line-height: 100px;
+	text-align: center;
+}
+
+.password-box img {	
+	animation-name: fade-in;
+	animation-duration: 4s;
+}
+
+.password-box input {
+	width: 65%;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgrey;
+	padding: 4px;
+}
+
+.password-box button {
+	width: 25%;
+	border-radius: 10px;
+	border-style: solid;
+}
+
+@media screen and (min-width: 480px) {
+	.password-box {
+		width: 500px;	
+	}
+}
+
+@keyframes fade-in {
+	from { opacity: 0.0; }
+	to { opacity: 1.0; }
+}
